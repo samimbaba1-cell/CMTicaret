@@ -1,0 +1,32 @@
+{
+  "name": "cmticaret",
+  "version": "1.0.0",
+  "description": "Modern E-Ticaret Sitesi - Türkiye Pazarı İçin",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
+    "build": "cd frontend && npm run build",
+    "test": "cd frontend && npm test",
+    "setup": "npm run install-all"
+  },
+  "keywords": [
+    "e-commerce",
+    "nextjs",
+    "express",
+    "mongodb",
+    "türkiye",
+    "iyzico"
+  ],
+  "author": "CMTicaret Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
